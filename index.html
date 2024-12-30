@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">Weather Dashboard</h1>
+  </header>
+  <main class="main">
+    <section class="search-section">
+      <input type="text" id="city-input" placeholder="Enter city name" class="input">
+      <button id="search-btn" class="button">Search</button>
+    </section>
+    <section id="weather-section" class="weather-section hidden">
+      <h2 class="city-name" id="city-name">City: --</h2>
+      <div class="weather-details">
+        <p>Temperature: <span id="temperature">--</span>°C</p>
+        <p>Condition: <span id="condition">--</span></p>
+        <p>Time: <span id="current-time">--</span></p>
+      </div>
+      <div id="weather-icon" class="weather-icon"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Powered by OpenWeatherMap API</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
